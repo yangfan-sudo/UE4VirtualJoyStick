@@ -357,7 +357,7 @@ void SWalkWidget::Tick(const FGeometry& AllottedGeometry, const double InCurrent
 			break;
 		case JoyStickType::E_RotateAngleOfView:
 			OnRightAnalogDelegateX.ExecuteIfBound(NormalizedOffset.X);
-			OnRightAnalogDelegateX.ExecuteIfBound(-NormalizedOffset.Y);
+			OnRightAnalogDelegateY.ExecuteIfBound(-NormalizedOffset.Y);
 			break;
 		}
 	}
